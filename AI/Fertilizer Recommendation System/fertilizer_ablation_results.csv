@@ -1,0 +1,6 @@
+accuracy,f1_macro,variant
+0.981,0.9809,full_features
+0.5047,0.4937,drop_crop_name
+0.7364,0.6885,drop_growth_stage
+0.8614,0.8334,drop_soil_region
+0.3141,0.2578,numeric_only_base

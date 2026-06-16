@@ -1,0 +1,41 @@
+{
+  "base_dataset": {
+    "accuracy": 0.981,
+    "f1_macro": 0.9809
+  },
+  "new_seed_test": {
+    "accuracy": 0.955,
+    "f1_macro": 0.9542
+  },
+  "noisy_test": {
+    "accuracy": 0.6798,
+    "f1_macro": 0.6845
+  },
+  "ablation_tests": [
+    {
+      "accuracy": 0.981,
+      "f1_macro": 0.9809,
+      "variant": "full_features"
+    },
+    {
+      "accuracy": 0.5047,
+      "f1_macro": 0.4937,
+      "variant": "drop_crop_name"
+    },
+    {
+      "accuracy": 0.7364,
+      "f1_macro": 0.6885,
+      "variant": "drop_growth_stage"
+    },
+    {
+      "accuracy": 0.8614,
+      "f1_macro": 0.8334,
+      "variant": "drop_soil_region"
+    },
+    {
+      "accuracy": 0.3141,
+      "f1_macro": 0.2578,
+      "variant": "numeric_only_base"
+    }
+  ]
+}
