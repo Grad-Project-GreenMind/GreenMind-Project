@@ -1,16 +1,31 @@
-  @import "tailwindcss";
+@import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
-  --background: #F7FEF4;
-  --primary: #4CAF50;
-  --secondary: #683A2F;
+  --background: #f7fef4;
+  --primary: #4caf50;
+  --secondary: #683a2f;
 }
 
 body {
   margin: 0;
   background-color: var(--background);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--secondary);
+}
+
+/* إخفاء شريط التمرير لمتصفحات Chrome و Safari */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* إخفاء شريط التمرير لمتصفحات */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
