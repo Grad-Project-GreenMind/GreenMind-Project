@@ -23,3 +23,10 @@ dist-ssr/
 *.njsproj
 *.sln
 *.sw?
+# .NET / Visual Studio
+.vs/
+bin/
+obj/
+*.db
+*.db-shm
+*.db-wal
