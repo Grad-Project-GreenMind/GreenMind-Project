@@ -1,0 +1,970 @@
+{
+  "metadata": {
+    "total_classes": 38,
+    "version": "1.0",
+    "language": "en",
+    "source": "New Plant Diseases Dataset (Augmented)"
+  },
+  "diseases": [
+    {
+      "id": 0,
+      "label": "Apple___Apple_scab",
+      "plant": "Apple",
+      "disease_name": "Apple Scab",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Venturia inaequalis",
+      "symptoms": [
+        "Olive-green or dark brown spots on leaves",
+        "Leaf deformation and premature leaf drop",
+        "Rough, scabby lesions on fruits",
+        "Fruit cracking in severe infections"
+      ],
+      "prevention": [
+        "Plant scab-resistant apple varieties",
+        "Prune trees to improve air circulation",
+        "Collect and destroy fallen leaves",
+        "Avoid overhead irrigation",
+        "Apply preventive fungicide sprays before rainy season"
+      ],
+      "treatment": [
+        "Spray Captan or Mancozeb fungicide",
+        "Use Strobilurin fungicides such as Azoxystrobin",
+        "Remove and destroy infected plant parts"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves", "Fruits", "Young shoots"]
+    },
+    {
+      "id": 1,
+      "label": "Apple___Black_rot",
+      "plant": "Apple",
+      "disease_name": "Black Rot",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Botryosphaeria obtusa",
+      "symptoms": [
+        "Brown spots with yellow halos on leaves",
+        "Fruit rot turning black",
+        "Concentric rings on infected fruits",
+        "Branch dieback and cankers"
+      ],
+      "prevention": [
+        "Prune dead and infected branches",
+        "Remove rotting fruits immediately",
+        "Improve ventilation through regular pruning",
+        "Avoid water stress on plants"
+      ],
+      "treatment": [
+        "Spray Captan-based fungicides",
+        "Use Thiophanate-methyl",
+        "Remove all sources of infection from the field"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves", "Fruits", "Branches"]
+    },
+    {
+      "id": 2,
+      "label": "Apple___Cedar_apple_rust",
+      "plant": "Apple",
+      "disease_name": "Cedar Apple Rust",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Gymnosporangium juniperi-virginianae",
+      "symptoms": [
+        "Orange or yellow-orange spots on leaves",
+        "Orange tubes growing on the leaf underside",
+        "Leaf deformation and premature drop",
+        "Spots on fruits in severe infections"
+      ],
+      "prevention": [
+        "Remove nearby juniper trees (secondary host)",
+        "Choose resistant apple varieties",
+        "Apply preventive sprays in spring",
+        "Avoid planting apple trees near junipers"
+      ],
+      "treatment": [
+        "Spray Myclobutanil or Propiconazole",
+        "Apply at first symptom appearance",
+        "Repeat every 7-10 days during infection season"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves", "Fruits"]
+    },
+    {
+      "id": 3,
+      "label": "Apple___healthy",
+      "plant": "Apple",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Regular and balanced irrigation",
+        "Proper and balanced fertilization",
+        "Annual pruning to improve air circulation",
+        "Regular monitoring for early detection of any infection"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 4,
+      "label": "Blueberry___healthy",
+      "plant": "Blueberry",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Maintain soil pH between 4.5 and 5.5",
+        "Regular drip irrigation",
+        "Apply balanced fertilizers",
+        "Annual pruning to remove old branches"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 5,
+      "label": "Cherry_(including_sour)___Powdery_mildew",
+      "plant": "Cherry",
+      "disease_name": "Powdery Mildew",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Podosphaera clandestina",
+      "symptoms": [
+        "White powdery coating on leaves and shoots",
+        "Curling and distortion of young leaves",
+        "Yellowing and premature leaf drop",
+        "Fruit deformation in severe cases"
+      ],
+      "prevention": [
+        "Improve air circulation through pruning",
+        "Avoid excessive nitrogen fertilization",
+        "Choose resistant varieties",
+        "Water in early morning to allow leaves to dry during the day"
+      ],
+      "treatment": [
+        "Spray micronized sulfur",
+        "Use Myclobutanil or Trifloxystrobin",
+        "Spray potassium bicarbonate solution as organic alternative"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves", "Shoots", "Fruits"]
+    },
+    {
+      "id": 6,
+      "label": "Cherry_(including_sour)___healthy",
+      "plant": "Cherry",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Regular irrigation",
+        "Annual pruning",
+        "Balanced fertilization",
+        "Routine monitoring"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 7,
+      "label": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "plant": "Corn (Maize)",
+      "disease_name": "Cercospora Leaf Spot / Gray Leaf Spot",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Cercospora zeae-maydis",
+      "symptoms": [
+        "Gray or brown rectangular lesions on leaves",
+        "Lesions limited by leaf veins",
+        "Lesions expand and turn pale gray",
+        "Leaf death in severe infections"
+      ],
+      "prevention": [
+        "Rotate crops with non-host plants",
+        "Plow crop residues after harvest",
+        "Use resistant hybrid varieties",
+        "Avoid dense planting"
+      ],
+      "treatment": [
+        "Spray Strobilurin or Triazole fungicides",
+        "Apply early at first symptom appearance",
+        "Use Azoxystrobin or Propiconazole"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves"]
+    },
+    {
+      "id": 8,
+      "label": "Corn_(maize)___Common_rust_",
+      "plant": "Corn (Maize)",
+      "disease_name": "Common Rust",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Puccinia sorghi",
+      "symptoms": [
+        "Reddish-brown pustules on both leaf surfaces",
+        "Pustules turn black when mature",
+        "Yellowing of surrounding leaf tissue",
+        "Plant weakening and yield loss in severe cases"
+      ],
+      "prevention": [
+        "Plant resistant varieties",
+        "Early planting to avoid peak spore dispersal",
+        "Avoid growing in highly humid areas",
+        "Rotate crops"
+      ],
+      "treatment": [
+        "Spray Triazole fungicides such as Propiconazole",
+        "Use Mancozeb at early infection stage",
+        "Spraying is most effective before disease outbreak"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves", "Stalk"]
+    },
+    {
+      "id": 9,
+      "label": "Corn_(maize)___Northern_Leaf_Blight",
+      "plant": "Corn (Maize)",
+      "disease_name": "Northern Leaf Blight",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Exserohilum turcicum",
+      "symptoms": [
+        "Long grayish-green elliptical lesions on leaves",
+        "Lesions range from 2.5 to 15 cm in length",
+        "Lesions turn grayish-brown when mature",
+        "Leaf death in severe infections"
+      ],
+      "prevention": [
+        "Use resistant hybrids",
+        "Rotate crops",
+        "Burn or plow crop residues",
+        "Plant at appropriate times to reduce humidity"
+      ],
+      "treatment": [
+        "Spray Azoxystrobin or Pyraclostrobin",
+        "Apply at first symptom appearance",
+        "Use Propiconazole for advanced infections"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves"]
+    },
+    {
+      "id": 10,
+      "label": "Corn_(maize)___healthy",
+      "plant": "Corn (Maize)",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Adequate irrigation especially during flowering",
+        "Balanced NPK fertilization",
+        "Regular insect pest monitoring",
+        "Plant in well-drained soil"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 11,
+      "label": "Grape___Black_rot",
+      "plant": "Grape",
+      "disease_name": "Black Rot",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Guignardia bidwellii",
+      "symptoms": [
+        "Small round brown spots on leaves",
+        "Small black dots appearing inside spots",
+        "Berries turn brown then black and shrivel",
+        "Berries become black mummified raisins"
+      ],
+      "prevention": [
+        "Remove mummified berries from vine and ground",
+        "Prune vines well to improve air circulation",
+        "Do not leave crop residues in the field",
+        "Preventive spraying in spring before symptoms appear"
+      ],
+      "treatment": [
+        "Spray Myclobutanil or Mancozeb",
+        "Use Captan for early infections",
+        "Spray every 10-14 days in wet weather"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves", "Fruits", "Clusters"]
+    },
+    {
+      "id": 12,
+      "label": "Grape___Esca_(Black_Measles)",
+      "plant": "Grape",
+      "disease_name": "Esca (Black Measles)",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Phaeoacremonium spp. / Phaeomoniella chlamydospora",
+      "symptoms": [
+        "Interveinal brown or yellow spots on leaves",
+        "Berry flesh cracking and turning brown",
+        "Sudden vine wilting in summer",
+        "Brown streaks inside wood"
+      ],
+      "prevention": [
+        "Sterilize pruning tools between each vine",
+        "Avoid pruning in wet weather",
+        "Apply pruning wound sealant",
+        "Use disease-free planting material"
+      ],
+      "treatment": [
+        "No complete cure currently available",
+        "Remove severely infected parts",
+        "Trunk injection with fungicides in early cases",
+        "Surgical removal of infected tissues"
+      ],
+      "severity": "very_high",
+      "affected_parts": ["Leaves", "Fruits", "Wood", "Trunk"]
+    },
+    {
+      "id": 13,
+      "label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "plant": "Grape",
+      "disease_name": "Leaf Blight (Isariopsis Leaf Spot)",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Pseudocercospora vitis",
+      "symptoms": [
+        "Irregular brown spots on leaves",
+        "Yellowing around spots",
+        "Premature leaf drop in severe infections",
+        "Gray fungal growth on leaf underside"
+      ],
+      "prevention": [
+        "Improve air circulation through pruning",
+        "Avoid overhead irrigation",
+        "Remove infected and fallen leaves",
+        "Preventive spraying at the start of season"
+      ],
+      "treatment": [
+        "Spray Mancozeb or Copper Oxychloride",
+        "Use Triazole fungicides",
+        "Spray every two weeks during high humidity season"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves"]
+    },
+    {
+      "id": 14,
+      "label": "Grape___healthy",
+      "plant": "Grape",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Regular pruning and vine training",
+        "Drip irrigation to reduce leaf moisture",
+        "Balanced fertilization",
+        "Weekly monitoring for early detection"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 15,
+      "label": "Orange___Haunglongbing_(Citrus_greening)",
+      "plant": "Orange",
+      "disease_name": "Huanglongbing (Citrus Greening)",
+      "is_healthy": false,
+      "pathogen_type": "bacteria",
+      "pathogen": "Candidatus Liberibacter asiaticus",
+      "symptoms": [
+        "Asymmetric yellowing of leaves resembling magnesium deficiency",
+        "Small, deformed, bitter-tasting fruits",
+        "Uneven fruit coloring (does not ripen fully)",
+        "Dieback of shoots from tip to base"
+      ],
+      "prevention": [
+        "Control Asian citrus psyllid (disease vector)",
+        "Use certified disease-free planting material",
+        "Remove infected trees immediately",
+        "Separate orchards with protective barriers"
+      ],
+      "treatment": [
+        "No curative treatment currently available",
+        "Antibiotic injection (Oxytetracycline) slows disease progression",
+        "Control psyllid with insecticides",
+        "Remove severely infected trees"
+      ],
+      "severity": "very_high",
+      "affected_parts": ["Leaves", "Fruits", "Roots", "Whole plant"]
+    },
+    {
+      "id": 16,
+      "label": "Peach___Bacterial_spot",
+      "plant": "Peach",
+      "disease_name": "Bacterial Spot",
+      "is_healthy": false,
+      "pathogen_type": "bacteria",
+      "pathogen": "Xanthomonas arboricola pv. pruni",
+      "symptoms": [
+        "Small water-soaked spots on leaves turning brown",
+        "Infected tissue falls out giving a shot-hole appearance",
+        "Sunken spots on fruits",
+        "Fruit cracking and rotting"
+      ],
+      "prevention": [
+        "Choose resistant varieties",
+        "Avoid mechanical wounds and injuries",
+        "Preventive spraying with copper compounds",
+        "Improve ventilation and avoid excess humidity"
+      ],
+      "treatment": [
+        "Spray Copper Hydroxide",
+        "Use Oxytetracycline at early infection stage",
+        "Remove severely infected plant parts"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves", "Fruits", "Branches"]
+    },
+    {
+      "id": 17,
+      "label": "Peach___healthy",
+      "plant": "Peach",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Annual pruning after harvest",
+        "Regulated irrigation avoiding excess",
+        "Balanced fertilization",
+        "Regular pest and disease monitoring"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 18,
+      "label": "Pepper,_bell___Bacterial_spot",
+      "plant": "Pepper (Bell)",
+      "disease_name": "Bacterial Spot",
+      "is_healthy": false,
+      "pathogen_type": "bacteria",
+      "pathogen": "Xanthomonas euvesicatoria",
+      "symptoms": [
+        "Small water-soaked spots on leaves turning dark brown",
+        "Yellow halo surrounding brown spots",
+        "Infected leaves drop prematurely",
+        "Sunken water-soaked spots on fruits"
+      ],
+      "prevention": [
+        "Use treated and certified seeds",
+        "Avoid overhead irrigation",
+        "Rotate crops",
+        "Preventive spraying with copper compounds"
+      ],
+      "treatment": [
+        "Spray copper compounds with Mancozeb",
+        "Use licensed bactericides",
+        "Remove severely infected plants"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves", "Fruits", "Stem"]
+    },
+    {
+      "id": 19,
+      "label": "Pepper,_bell___healthy",
+      "plant": "Pepper (Bell)",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Regular drip irrigation",
+        "Balanced fertilization",
+        "Good ventilation between plants",
+        "Weekly monitoring"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 20,
+      "label": "Potato___Early_blight",
+      "plant": "Potato",
+      "disease_name": "Early Blight",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Alternaria solani",
+      "symptoms": [
+        "Dark brown spots with concentric rings resembling a target on leaves",
+        "Spots appear first on older lower leaves",
+        "Yellowing of leaves around spots",
+        "Drying and dropping of infected leaves"
+      ],
+      "prevention": [
+        "Rotate crops (3-4 years)",
+        "Use certified disease-free seed potatoes",
+        "Avoid overwatering and ensure good drainage",
+        "Preventive fungicide spraying"
+      ],
+      "treatment": [
+        "Spray Mancozeb or Chlorothalonil",
+        "Use Azoxystrobin or Difenoconazole",
+        "Remove and destroy infected leaves"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves", "Stem"]
+    },
+    {
+      "id": 21,
+      "label": "Potato___Late_blight",
+      "plant": "Potato",
+      "disease_name": "Late Blight",
+      "is_healthy": false,
+      "pathogen_type": "oomycete",
+      "pathogen": "Phytophthora infestans",
+      "symptoms": [
+        "Dark green water-soaked spots on leaf edges",
+        "White fungal growth on leaf underside in humid weather",
+        "Spots rapidly turn dark brown and spread",
+        "Tuber rot with brown discoloration under skin"
+      ],
+      "prevention": [
+        "Use certified and treated seed tubers",
+        "Preventive spraying before humid season",
+        "Avoid overwatering and high humidity",
+        "Plant resistant varieties"
+      ],
+      "treatment": [
+        "Spray Metalaxyl with Mancozeb at first appearance",
+        "Use Cymoxanil or Dimethomorph",
+        "Spray every 5-7 days in cool, wet weather"
+      ],
+      "severity": "very_high",
+      "affected_parts": ["Leaves", "Stem", "Tubers"]
+    },
+    {
+      "id": 22,
+      "label": "Potato___healthy",
+      "plant": "Potato",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Use certified seed potatoes",
+        "Plant in well-drained soil",
+        "Regular irrigation avoiding excess",
+        "Balanced fertilization and routine monitoring"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 23,
+      "label": "Raspberry___healthy",
+      "plant": "Raspberry",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Annual pruning of old canes",
+        "Regular irrigation",
+        "Organic fertilization",
+        "Pest and disease monitoring"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 24,
+      "label": "Soybean___healthy",
+      "plant": "Soybean",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Crop rotation",
+        "Planting at appropriate time",
+        "Use certified seeds",
+        "Balanced phosphorus and potassium fertilization"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 25,
+      "label": "Squash___Powdery_mildew",
+      "plant": "Squash",
+      "disease_name": "Powdery Mildew",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Podosphaera xanthii / Erysiphe cichoracearum",
+      "symptoms": [
+        "White powdery coating on upper leaf surface",
+        "Leaf yellowing beneath the white layer",
+        "Curling and drying of infected leaves",
+        "Plant weakening and reduced yield"
+      ],
+      "prevention": [
+        "Improve air circulation between plants",
+        "Avoid excessive nitrogen fertilization",
+        "Water in the morning so leaves dry during the day",
+        "Plant resistant varieties"
+      ],
+      "treatment": [
+        "Spray micronized sulfur",
+        "Use Myclobutanil or Tebuconazole",
+        "Spray potassium bicarbonate solution"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves", "Shoots"]
+    },
+    {
+      "id": 26,
+      "label": "Strawberry___Leaf_scorch",
+      "plant": "Strawberry",
+      "disease_name": "Leaf Scorch",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Diplocarpon earlianum",
+      "symptoms": [
+        "Small dark purple spots on leaves",
+        "Spots turn brown with a red halo",
+        "Drying and death of severely infected leaves",
+        "Plant weakening and reduced yield"
+      ],
+      "prevention": [
+        "Remove old and infected leaves",
+        "Avoid overhead irrigation",
+        "Improve air circulation",
+        "Renew strawberry plantings every 3-4 years"
+      ],
+      "treatment": [
+        "Spray Captan or Myclobutanil",
+        "Use Azoxystrobin",
+        "Manually remove infected leaves"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves"]
+    },
+    {
+      "id": 27,
+      "label": "Strawberry___healthy",
+      "plant": "Strawberry",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Drip irrigation",
+        "Plastic or straw mulching to reduce humidity",
+        "Regular farm renewal",
+        "Pest and disease monitoring"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    },
+    {
+      "id": 28,
+      "label": "Tomato___Bacterial_spot",
+      "plant": "Tomato",
+      "disease_name": "Bacterial Spot",
+      "is_healthy": false,
+      "pathogen_type": "bacteria",
+      "pathogen": "Xanthomonas vesicatoria",
+      "symptoms": [
+        "Small water-soaked spots on leaves turning brown",
+        "Yellow halo surrounding the spots",
+        "Severely infected leaves drop",
+        "Sunken spots on fruits affecting quality"
+      ],
+      "prevention": [
+        "Use treated and certified seeds",
+        "Crop rotation",
+        "Avoid overhead irrigation",
+        "Preventive spraying with copper compounds"
+      ],
+      "treatment": [
+        "Spray Copper Hydroxide",
+        "Use Mancozeb combined with copper",
+        "Remove severely infected plants"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves", "Fruits", "Stem"]
+    },
+    {
+      "id": 29,
+      "label": "Tomato___Early_blight",
+      "plant": "Tomato",
+      "disease_name": "Early Blight",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Alternaria solani",
+      "symptoms": [
+        "Brown spots with concentric rings first on lower leaves",
+        "Leaf yellowing around spots",
+        "Premature leaf drop",
+        "Sunken spots on fruits near the stem end"
+      ],
+      "prevention": [
+        "Crop rotation",
+        "Remove crop residues after harvest",
+        "Drip irrigation to avoid wetting leaves",
+        "Balanced fertilization to strengthen the plant"
+      ],
+      "treatment": [
+        "Spray Mancozeb or Chlorothalonil",
+        "Use Azoxystrobin or Difenoconazole",
+        "Spray every 7-10 days in wet weather"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves", "Stem", "Fruits"]
+    },
+    {
+      "id": 30,
+      "label": "Tomato___Late_blight",
+      "plant": "Tomato",
+      "disease_name": "Late Blight",
+      "is_healthy": false,
+      "pathogen_type": "oomycete",
+      "pathogen": "Phytophthora infestans",
+      "symptoms": [
+        "Dark green water-soaked spots on leaves and stem",
+        "White growth on leaf underside in humid weather",
+        "Rapid browning and death of leaves",
+        "Fruit rot turning dark brown"
+      ],
+      "prevention": [
+        "Preventive spraying at the start of humid season",
+        "Avoid dense planting",
+        "Use resistant varieties",
+        "Avoid evening irrigation"
+      ],
+      "treatment": [
+        "Spray Metalaxyl with Mancozeb",
+        "Use Cymoxanil or Famoxadone",
+        "Spray every 5-7 days when disease spreads"
+      ],
+      "severity": "very_high",
+      "affected_parts": ["Leaves", "Stem", "Fruits"]
+    },
+    {
+      "id": 31,
+      "label": "Tomato___Leaf_Mold",
+      "plant": "Tomato",
+      "disease_name": "Leaf Mold",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Passalora fulva",
+      "symptoms": [
+        "Pale yellow spots on upper leaf surface",
+        "Olive or brown fuzzy growth on leaf underside",
+        "Infected leaves curl and dry out",
+        "Rapid spread in humid, enclosed greenhouse conditions"
+      ],
+      "prevention": [
+        "Ensure good ventilation in greenhouses",
+        "Reduce relative humidity inside greenhouse",
+        "Avoid overwatering",
+        "Remove infected lower leaves"
+      ],
+      "treatment": [
+        "Spray Chlorothalonil or Mancozeb",
+        "Use Triazole fungicides",
+        "Improve ventilation immediately"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves"]
+    },
+    {
+      "id": 32,
+      "label": "Tomato___Septoria_leaf_spot",
+      "plant": "Tomato",
+      "disease_name": "Septoria Leaf Spot",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Septoria lycopersici",
+      "symptoms": [
+        "Small circular spots with gray-white center and brown border",
+        "Tiny black dots inside spots (fungal pycnidia)",
+        "Leaves yellow and drop starting from lower leaves",
+        "Plant weakening in severe infections"
+      ],
+      "prevention": [
+        "Crop rotation",
+        "Remove crop residues",
+        "Drip irrigation",
+        "Avoid dense planting"
+      ],
+      "treatment": [
+        "Spray Mancozeb or Chlorothalonil",
+        "Use Azoxystrobin",
+        "Manually remove infected leaves"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves"]
+    },
+    {
+      "id": 33,
+      "label": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "plant": "Tomato",
+      "disease_name": "Spider Mites (Two-spotted Spider Mite)",
+      "is_healthy": false,
+      "pathogen_type": "pest",
+      "pathogen": "Tetranychus urticae",
+      "symptoms": [
+        "Tiny yellow or white stippling dots on leaves",
+        "General leaf yellowing and drying",
+        "Fine webbing on the underside of leaves",
+        "Leaf drop in severe infestations"
+      ],
+      "prevention": [
+        "Maintain adequate humidity (mites thrive in dry conditions)",
+        "Introduce natural predators such as Phytoseiulus persimilis",
+        "Avoid excessive nitrogen fertilization",
+        "Weekly monitoring for early detection"
+      ],
+      "treatment": [
+        "Spray Abamectin or Spiromesifen",
+        "Use neem oil as an organic alternative",
+        "Spray micronized sulfur",
+        "Rotate between miticides to prevent resistance"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves"]
+    },
+    {
+      "id": 34,
+      "label": "Tomato___Target_Spot",
+      "plant": "Tomato",
+      "disease_name": "Target Spot",
+      "is_healthy": false,
+      "pathogen_type": "fungus",
+      "pathogen": "Corynespora cassiicola",
+      "symptoms": [
+        "Brown spots with concentric rings resembling a target",
+        "Yellow halo surrounding the spots",
+        "Leaf yellowing and drop",
+        "Similar spots on fruits and stem"
+      ],
+      "prevention": [
+        "Improve air circulation",
+        "Avoid overhead irrigation",
+        "Crop rotation",
+        "Remove crop residues"
+      ],
+      "treatment": [
+        "Spray Chlorothalonil or Mancozeb",
+        "Use Azoxystrobin or Boscalid",
+        "Spray every 7-14 days"
+      ],
+      "severity": "medium",
+      "affected_parts": ["Leaves", "Fruits", "Stem"]
+    },
+    {
+      "id": 35,
+      "label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "plant": "Tomato",
+      "disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "is_healthy": false,
+      "pathogen_type": "virus",
+      "pathogen": "Tomato yellow leaf curl virus (TYLCV)",
+      "symptoms": [
+        "Leaves curl and roll upward",
+        "Yellowing of leaf margins and tips",
+        "Stunted plant growth",
+        "Reduced flowering and sharp yield decline"
+      ],
+      "prevention": [
+        "Control whitefly (disease vector)",
+        "Use TYLCV-resistant varieties",
+        "Use plastic covers or insect-proof nets",
+        "Remove infected plants immediately"
+      ],
+      "treatment": [
+        "No cure for the virus itself",
+        "Control whitefly with Imidacloprid or Thiamethoxam",
+        "Use insecticidal soaps or neem oil against the vector"
+      ],
+      "severity": "very_high",
+      "affected_parts": ["Leaves", "Whole plant"]
+    },
+    {
+      "id": 36,
+      "label": "Tomato___Tomato_mosaic_virus",
+      "plant": "Tomato",
+      "disease_name": "Tomato Mosaic Virus (ToMV)",
+      "is_healthy": false,
+      "pathogen_type": "virus",
+      "pathogen": "Tomato mosaic virus (ToMV)",
+      "symptoms": [
+        "Mosaic discoloration alternating light and dark green on leaves",
+        "Leaf distortion and curling",
+        "Stunted plant growth",
+        "Deformed, mottled fruits with poor quality"
+      ],
+      "prevention": [
+        "Use certified and sterilized seeds",
+        "Sterilize tools with sodium hypochlorite solution",
+        "Wash hands before handling plants",
+        "Control insect vectors"
+      ],
+      "treatment": [
+        "No cure for the virus",
+        "Remove and destroy infected plants immediately",
+        "Full sterilization of all tools and equipment"
+      ],
+      "severity": "high",
+      "affected_parts": ["Leaves", "Fruits", "Whole plant"]
+    },
+    {
+      "id": 37,
+      "label": "Tomato___healthy",
+      "plant": "Tomato",
+      "disease_name": "Healthy",
+      "is_healthy": true,
+      "pathogen_type": null,
+      "pathogen": null,
+      "symptoms": [],
+      "prevention": [
+        "Drip irrigation to avoid wetting leaves",
+        "Balanced fertilization",
+        "Good ventilation between plants",
+        "Weekly monitoring for early disease detection"
+      ],
+      "treatment": [],
+      "severity": "none",
+      "affected_parts": []
+    }
+  ]
+}
