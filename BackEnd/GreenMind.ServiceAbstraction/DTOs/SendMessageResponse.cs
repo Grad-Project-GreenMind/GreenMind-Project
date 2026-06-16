@@ -23,7 +23,7 @@ namespace GreenMind.ServiceAbstraction.DTOs
         public AnalysisResult? Analysis { get; set; }
 
         [JsonPropertyName("follow_up_question")]
-       // [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+       
         public string? FollowUpQuestion { get; set; }
     }
 

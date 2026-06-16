@@ -18,7 +18,7 @@ namespace GreenMind.API.Controllers
             _service = service;
         }
 
-        // POST /api/reviews
+        
         [HttpPost]
         public async Task<IActionResult> CreateReview([FromBody] CreateReviewDto dto)
         {

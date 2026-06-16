@@ -30,7 +30,6 @@ namespace GreenMind.Service.Services.ShoppingCart
                     Id = o.Id,
                     OrderDate = o.OrderDate,
                     TotalAmount = o.TotalAmount,
-                    // ✅ التعديل هنا: ضيفي ToString()
                     Status = o.Status.ToString()
                 })
                 .ToListAsync();
@@ -39,13 +38,7 @@ namespace GreenMind.Service.Services.ShoppingCart
         }
         public async Task<int> PlaceOrderAsync(int userId, CheckoutRequestDto checkoutDto)
         {
-            //var cart = await _context.Carts
-            //    .Include(c => c.Items)
-            //    .ThenInclude(ci => ci.Product)
-            //    .FirstOrDefaultAsync(c => c.UserId == userId);
-
-            //if (cart == null || !cart.Items.Any())
-            //    throw new Exception("The basket is empty, add the first products!");
+           
 
            
             var cart = await _context.Carts.FirstOrDefaultAsync(c => c.UserId == userId);

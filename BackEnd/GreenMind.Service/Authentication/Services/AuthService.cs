@@ -42,7 +42,6 @@ namespace GreenMind.Service.Authentication.Services
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            // التصحيح هنا: الترتيب الصح (email, role, id, name)
             var token = _jwtService.GenerateToken(user.Email, "User", user.Id, user.Name);
 
             return new AuthResponseDto
@@ -67,7 +66,6 @@ namespace GreenMind.Service.Authentication.Services
 
                 if (isPasswordValid)
                 {
-                    // التصحيح هنا: بعتنا dto.Role (اللي هي "User") في مكانها الصح تاني باراميتر
                     var token = _jwtService.GenerateToken(user.Email, dto.Role, user.Id, user.Name);
 
                     return new AuthResponseDto

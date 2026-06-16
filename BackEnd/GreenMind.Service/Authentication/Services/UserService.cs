@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO; // ضفت دي عشان الـ Path يشتغل
+using System.IO; 
 
 namespace GreenMind.Service.Authentication.Services
 {
@@ -37,7 +37,6 @@ namespace GreenMind.Service.Authentication.Services
                 Email = user.Email,
                 Phone = user.Phone,
                 Gender = user.Gender,
-                // التعديل هنا: نبعت المسار كامل لو الصورة موجودة
                 ProfilePic = !string.IsNullOrEmpty(user.ProfilePic)
                     ? $"https://greenmind.runasp.net/images/profiles/{user.ProfilePic}"
                     : null
@@ -80,7 +79,6 @@ namespace GreenMind.Service.Authentication.Services
                 Email = user.Email,
                 Phone = user.Phone,
                 Gender = user.Gender,
-                // التعديل هنا برضه عشان رنا تشوف الصورة فوراً بعد التحديث
                 ProfilePic = !string.IsNullOrEmpty(user.ProfilePic)
                     ? $"https://greenmind.runasp.net/images/profiles/{user.ProfilePic}"
                     : null

@@ -22,9 +22,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// =========================
-// 🌐 CORS Policy
-// =========================
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -36,17 +33,13 @@ builder.Services.AddCors(options =>
     });
 });
 
-// =========================
-// 🎮 Controllers Configuration
-// =========================
+
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(AdminController).Assembly);
 
 builder.Services.AddEndpointsApiExplorer();
 
-// =========================
-// 🛡️ Swagger Configuration
-// =========================
+
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "GreenMind API", Version = "v1" });
@@ -71,15 +64,12 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-// =========================
-// 💾 Database Context
-// =========================
+
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// =========================
-// 🛠️ Dependency Injection
-// =========================
+
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<IPasswordHasherService, PasswordHasherService>();
@@ -100,7 +90,6 @@ builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
 builder.Services.AddScoped<IChatService, ChatService>();
 
-//  JWT Authentication
 var jwtKey = builder.Configuration["Jwt:Key"];
 if (string.IsNullOrEmpty(jwtKey))
     throw new Exception("Jwt:Key is missing in appsettings.json");
@@ -128,8 +117,6 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-//  Data Seeding 
-
 
 using (var scope = app.Services.CreateScope())
 {
@@ -154,7 +141,6 @@ using (var scope = app.Services.CreateScope())
         logger.LogError(ex, "An error occurred while seeding the database.");
     }
 }
-//  Middleware Pipeline
 
 app.UseSwagger();
 app.UseSwaggerUI(c => {

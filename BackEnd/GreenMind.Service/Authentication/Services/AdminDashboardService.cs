@@ -40,7 +40,6 @@ namespace GreenMind.Service.Services
             };
         }
 
-        // ================= CREATE (Updated to use ID for Image) =================
         public async Task<AdminProductDto> CreateProductAsync(CreateUpdateProductDto dto)
         {
             ValidateProduct(dto);
@@ -77,7 +76,6 @@ namespace GreenMind.Service.Services
             return await MapToDto(entity.Id);
         }
 
-        // ================= UPDATE =================
         public async Task<AdminProductDto> UpdateProductAsync(int id, CreateUpdateProductDto dto)
         {
             ValidateProduct(dto, true);
@@ -112,7 +110,7 @@ namespace GreenMind.Service.Services
             return await MapToDto(entity.Id);
         }
 
-        // ================= DELETE =================
+       
         public async Task DeleteProductAsync(int id)
         {
             var entity = await _context.Products
@@ -132,8 +130,6 @@ namespace GreenMind.Service.Services
 
             await _context.SaveChangesAsync();
         }
-
-        // ================= SAVE IMAGE BY ID (Modified) =================
         private async Task<string> SaveImageWithIdAsync(IFormFile image, int productId)
         {
             var extension = Path.GetExtension(image.FileName).ToLower();
@@ -161,8 +157,6 @@ namespace GreenMind.Service.Services
 
             return $"{baseUrl}/images/{fileName}";
         }
-
-        // ================= REST OF METHODS (Unchanged) =================
 
         public async Task<OrdersResponseDto> GetOrdersAsync()
         {

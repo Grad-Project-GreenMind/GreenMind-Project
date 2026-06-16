@@ -19,14 +19,12 @@ namespace GreenMindAI.Controllers
             _service = service;
         }
 
-        // ================= CREATE =================
         [HttpPost("products")]
         public async Task<IActionResult> CreateProduct([FromForm] CreateUpdateProductDto dto)
         {
             return Ok(await _service.CreateProductAsync(dto));
         }
 
-        // ================= UPDATE =================
         [HttpPut("products/{id}")]
         public async Task<IActionResult> UpdateProduct(int id, [FromForm] CreateUpdateProductDto dto)
         {
@@ -40,7 +38,6 @@ namespace GreenMindAI.Controllers
             await _service.DeleteProductAsync(id);
             return Ok(new { message = "Product deleted successfully" });
         }
-        // ================= GET ALL =================
         [HttpGet("products")]
         public async Task<IActionResult> GetProducts()
         {
@@ -48,23 +45,18 @@ namespace GreenMindAI.Controllers
             return Ok(result);
         }
 
-        // ================= USER ACTIVITIES =================
         [HttpGet("user-activities")]
         public async Task<IActionResult> GetUserActivities([FromQuery] string? search)
         {
             return Ok(await _service.GetUserActivitiesAsync(search));
         }
 
-        // ================= ORDERS =================
         [HttpGet("orders")]
         public async Task<IActionResult> GetOrders()
         {
             return Ok(await _service.GetOrdersAsync());
         }
      
- 
-
-        // ================= HOME SUMMARY =================
         [HttpGet("home-summary")]
         public async Task<IActionResult> GetHomeSummary()
         {

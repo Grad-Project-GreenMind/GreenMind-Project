@@ -2,7 +2,6 @@
 {
     public class AuthResponseDto
     {
-        // السطر ده هو اللي هيخلي ميار تعرف تسحب الـ Id وتخزنه عندها
         public string Id { get; set; } = string.Empty;
 
         public string Token { get; set; } = string.Empty;

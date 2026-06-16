@@ -14,7 +14,6 @@ namespace GreenMind.ServiceAbstraction.DTOs
         [JsonPropertyName("App Method")]
         public string AppMethod { get; set; } = string.Empty;
 
-        // 💡 التعديل هنا: خليناه string عشان يستقبل النص الطويل من غير إيرور
         [JsonPropertyName("Why this choice?")]
         public string WhyThisChoice { get; set; } = string.Empty;
     }

@@ -46,7 +46,6 @@ namespace GreenMindAI.Controllers
         [HttpPost("forgot-password")]
         public async Task<IActionResult> ForgotPassword(ForgotPasswordRequestDto dto)
         {
-            // بنبعت الـ Email بس عشان الـ Service مستنية string
             await _authService.ForgotPasswordAsync(dto.Email);
             return Ok(new { message = "If the email exists, a reset link will be sent." });
         }
@@ -54,7 +53,6 @@ namespace GreenMindAI.Controllers
         [HttpPost("reset-password")]
         public async Task<IActionResult> ResetPassword(ResetPasswordDto dto)
         {
-            // شلنا الـ var result عشان الميثود دي void (Task)
             await _authService.ResetPasswordAsync(dto);
             return Ok(new { message = "Password has been reset successfully." });
         }
@@ -63,10 +61,8 @@ namespace GreenMindAI.Controllers
         {
             try
             {
-                // بننادي الـ Service وبنبعت البارامترز اللي هي مستنياها
                 var result = await _authService.GoogleLoginAsync(dto.Token, dto.Role);
 
-                // لو العملية نجحت بنرجع الـ Result (اللي فيه الـ Token والـ IsSuccess)
                 if (result.IsSuccess)
                 {
                     return Ok(result);
@@ -76,7 +72,6 @@ namespace GreenMindAI.Controllers
             }
             catch (Exception ex)
             {
-                // لو حصل Exception (زي الـ NotImplementedException اللي حطيناها)
                 return StatusCode(500, new { message = ex.Message });
             }
         }

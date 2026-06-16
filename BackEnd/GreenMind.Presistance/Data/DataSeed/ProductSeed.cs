@@ -13,7 +13,6 @@ namespace GreenMind.Presistance.DataSeed
         public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.HasData(
-                // CategoryId 1: Seeds
                 new Product { Id = 1, CategoryId = 1, Name = "Premium Mint Seeds", Price = 50, Desc = "Refreshing aroma, vibrant leaves. Perfect for teas, cooking, and home gardens. Easy to grow!", Img = "/images/mint-seeds.png" },
                 new Product { Id = 2, CategoryId = 1, Name = "Coffee Seeds", Price = 50, Desc = "Grow coffee at home with premium seeds. Cultivate aromatic beans for your daily brew. Perfect for enthusiasts.", Img = "/images/coffee.png" },
                 new Product { Id = 3, CategoryId = 1, Name = "Premium Dill Seeds", Price = 50, Desc = "Peppery and aromatic. Fast-growing, easy care. Perfect for pickling, fish, and salads.", Img = "/images/s.png" },
@@ -22,14 +21,12 @@ namespace GreenMind.Presistance.DataSeed
                 new Product { Id = 6, CategoryId = 1, Name = "Premium Arugula Seeds", Price = 50, Desc = "Crisp, peppery leaves. Ideal for salads and sandwiches. Fast-growing and rich in vitamins.", Img = "/images/arugula.png" },
                 new Product { Id = 7, CategoryId = 1, Name = "Premium White Bean Seeds", Price = 50, Desc = "Rich in protein and fiber. Ideal for healthy Egyptian cooking. Grow fresh beans for soups and stews.", Img = "/images/white-bean.png" },
 
-                // CategoryId 2: Soil
                 new Product { Id = 8, CategoryId = 2, Name = "Organic Seed Starting", Price = 100, Desc = "8 Quarts formula. Specialized for seed germination and cuttings. Approved for organic growing.", Img = "/images/organic-seed.png" },
                 new Product { Id = 9, CategoryId = 2, Name = "Potting Mix", Price = 100, Desc = "Available in .75 or 1.5 cubic feet. Formulated for herbs, vegetables, and indoor plants.", Img = "/images/P.png" },
                 new Product { Id = 10, CategoryId = 2, Name = "Garden Soil", Price = 100, Desc = "1 Cubic foot. Formulated for flower beds, vegetable gardens, trees, and shrubs. For in-ground use.", Img = "/images/garden-soil.png" },
                 new Product { Id = 11, CategoryId = 2, Name = "Composted Manure", Price = 100, Desc = "Enriched with Humus. Available in .75 cubic feet bags for nutrient-rich soil.", Img = "/images/composted-manure.png" },
                 new Product { Id = 12, CategoryId = 2, Name = "Potting Soil", Price = 100, Desc = "1 Cubic foot. Ideal for container gardens, hanging baskets, and window boxes.", Img = "/images/potting-soil.png" },
 
-                // CategoryId 3: Tools
                 new Product { Id = 13, CategoryId = 3, Name = "Digging Fork", Price = 200, Img = "/images/Rectangle.png" },
                 new Product { Id = 14, CategoryId = 3, Name = "Shovel", Price = 200, Img = "/images/shovel.png" },
                 new Product { Id = 15, CategoryId = 3, Name = "Square-Point Shovel", Price = 200, Img = "/images/T.png" },
@@ -46,7 +43,7 @@ namespace GreenMind.Presistance.DataSeed
                 var products = new List<Product>
                 {
                     new Product { Id = 1, CategoryId = 1, Name = "Premium Mint Seeds", Price = 50, Desc = "Refreshing aroma...", Img = "/images/mint-seeds.png" },
-                    // يمكنك إضافة باقي الـ 18 منتج هنا بنفس الطريقة إذا كنتِ تستخدمين SeedAsync في الـ Program.cs
+                   
                 };
                 await context.Products.AddRangeAsync(products);
                 await context.SaveChangesAsync();

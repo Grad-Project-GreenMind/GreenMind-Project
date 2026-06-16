@@ -1,6 +1,6 @@
 ﻿using GreenMind.Service.Authentication.DTOs;
 using GreenMind.ServiceAbstraction.Authentication.DTOs;
-using GreenMind.ServiceAbstraction.DTOs; // أو المسار الصح للـ DTOs عندك
+using GreenMind.ServiceAbstraction.DTOs; 
 
 namespace GreenMind.ServiceAbstraction.Authentication
 {
@@ -10,7 +10,6 @@ namespace GreenMind.ServiceAbstraction.Authentication
         Task<AuthResponseDto> LoginAsync(LoginDto dto);
         Task ResetPasswordAsync(ResetPasswordDto dto);
 
-        // ضيفي دول لو الـ Controller بيناديهم (حتى لو هيرجعوا NotImplementedException حالياً)
         Task ForgotPasswordAsync(string email);
         Task<AuthResponseDto> GoogleLoginAsync(string token, string role);
         Task<AuthResponseDto> FacebookLoginAsync(string token, string role);

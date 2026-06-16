@@ -4,7 +4,7 @@ namespace GreenMind.ServiceAbstraction.DTOs
 {
     public class CheckoutRequestDto
     {
-        //public string UserId { get; set; } = null!;
+        
         public CustomerDetailsDto CustomerDetails { get; set; } = null!;
         public CartDetailsDto CartDetails { get; set; } = null!;
         public string PaymentMethod { get; set; } = "Cash on delivery";

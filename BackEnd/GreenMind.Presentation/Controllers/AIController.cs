@@ -210,14 +210,14 @@ namespace GreenMind.Presentation.Controllers
         {
             try
             {
-                // تحويل الـ string لـ int
+               
                 if (!int.TryParse(userId, out int parsedUserId))
                 {
                     return BadRequest(new { Message = "User ID must be a valid number" });
                 }
 
                 var history = await _context.UserActivityHistory
-                    .Where(h => h.UserId == parsedUserId && h.Type == type) // التعديل هنا: استخدام الـ parsedUserId
+                    .Where(h => h.UserId == parsedUserId && h.Type == type) 
                     .OrderByDescending(h => h.Id)
                     .Select(h => new {
                         h.Id,

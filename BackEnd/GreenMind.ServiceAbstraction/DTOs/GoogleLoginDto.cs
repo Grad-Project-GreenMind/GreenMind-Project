@@ -8,6 +8,6 @@ namespace GreenMind.ServiceAbstraction.Authentication.DTOs
         public string? Token { get; set; } 
 
         [Required]
-        public string Role { get; set; } = "User"; // User/Admin
+        public string Role { get; set; } = "User"; 
     }
 }

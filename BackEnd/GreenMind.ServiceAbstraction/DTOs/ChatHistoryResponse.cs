@@ -48,7 +48,7 @@ namespace GreenMind.ServiceAbstraction.DTOs
         [JsonPropertyName("message")]
         public string? Message { get; set; }
 
-        [JsonPropertyName("history")] // الـ AI مستني history
+        [JsonPropertyName("history")] 
         public List<AiHistoryMessage> History { get; set; } = new();
 
         [JsonPropertyName("metadata")]
@@ -56,10 +56,10 @@ namespace GreenMind.ServiceAbstraction.DTOs
     }
     public class AiHistoryMessage
     {
-        [JsonPropertyName("sender")] // الـ AI مستني sender
+        [JsonPropertyName("sender")] 
         public string? Sender { get; set; }
 
-        [JsonPropertyName("text")]   // الـ AI مستني text
+        [JsonPropertyName("text")]  
         public string? Text { get; set; }
     }
 

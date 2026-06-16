@@ -4,21 +4,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GreenMind.Domain.Entities
 {
-    // 1. تعريف الـ Enum لحالات الطلب عشان نمنع الأخطاء اليدوية
     public enum OrderStatus
     {
-        Pending,    // قيد الانتظار
-        Confirmed,  // تم التأكيد
-        Shipped,    // تم الشحن
-        Delivered,  // تم التوصيل
-        Cancelled   // ملغي
+        Pending,    
+        Confirmed, 
+        Shipped,  
+        Delivered,  
+        Cancelled   
     }
 
     public class Order : BaseEntity
     {
         public DateTime OrderDate { get; set; } = DateTime.UtcNow;
 
-        // 2. التعديل: استبدال الـ string بـ Enum والقيمة الافتراضية هي Pending
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
 
         [Column(TypeName = "decimal(18,2)")]
@@ -42,7 +40,6 @@ namespace GreenMind.Domain.Entities
 
         public string? Notes { get; set; }
 
-        // العلاقات (Relationships)
         public int UserId { get; set; }
         public User User { get; set; } = null!;
 

@@ -29,7 +29,7 @@ namespace GreenMind.DataSeed
                     Phone = "01000000000",
                     OrderDate = DateTime.UtcNow.AddDays(-1),
                     TotalAmount = 150,
-                    // ✅ التعديل هنا: نستخدم الـ Enum بدل الـ string
+                   
                     Status = OrderStatus.Pending
                 },
                 new Order
@@ -39,7 +39,6 @@ namespace GreenMind.DataSeed
                     Phone = "01000000000",
                     OrderDate = DateTime.UtcNow.AddHours(-5),
                     TotalAmount = 300,
-                    // ✅ التعديل هنا: نستخدم القيمة الصح من الـ Enum
                     Status = OrderStatus.Delivered
                 },
                 new Order
@@ -49,7 +48,6 @@ namespace GreenMind.DataSeed
                     Phone = "01000000000",
                     OrderDate = DateTime.UtcNow,
                     TotalAmount = 450,
-                    // ✅ التعديل هنا: نستخدم القيمة الصح من الـ Enum
                     Status = OrderStatus.Shipped
                 }
             };

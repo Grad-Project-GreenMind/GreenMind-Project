@@ -23,7 +23,6 @@ namespace GreenMind.Presentation.Controllers
             var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "1";
             int userId = int.Parse(userIdStr);
 
-            // 1. لو المستخدم طلب تاريخ الأوردرات
             if (type.ToLower() == "order")
             {
                 var orders = await _context.Orders
@@ -42,7 +41,6 @@ namespace GreenMind.Presentation.Controllers
                 return Ok(orders);
             }
 
-            // 2. باقي الأنواع (AI, Fertilizer, etc.) بتيجي من جدول الهيستوري العادي
             var history = await _context.UserActivityHistory
                 .Where(h => h.UserId == userId && h.Type.ToLower() == type.ToLower())
                 .OrderByDescending(h => h.Id)
@@ -64,7 +62,6 @@ namespace GreenMind.Presentation.Controllers
             var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "1";
             int userId = int.Parse(userIdStr);
 
-            // لو النوع أوردر، نمسحه من جدول الـ Orders
             if (type.ToLower() == "order")
             {
                 var order = await _context.Orders

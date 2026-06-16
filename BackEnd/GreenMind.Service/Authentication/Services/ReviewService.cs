@@ -74,7 +74,6 @@ namespace GreenMind.Service.Services
                     Name = r.User.Name,
                     Position = r.Position,
                     Message = r.Comment,
-                    // التعديل هنا: نرجع قيمة الصورة كما هي في الداتابيز (سواء لينك أو null)
                     UserImage = r.User.ProfilePic,
                     CreatedAt = r.ReviewDate
                 })
