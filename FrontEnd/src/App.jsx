@@ -28,9 +28,9 @@ import ForgotPassword from "./pages/ForgotPassword";
 
 //Rehab
 import { CartProvider } from "./context/CartContext";
-import ProductsPage from "./Pages/ProductsPage";
-import CartPage from "./Pages/CartPage";
-import CheckoutPage from "./Pages/CheckoutPage";
+import ProductsPage from "./pages/ProductsPage";
+import CartPage from "./pages/CartPage";
+import CheckoutPage from "./pages/CheckoutPage";
 import CropRecommendation from "./pages/CropRecommendation";
 import FertilizerRecommendation from "./pages/FertilizerRecommendation";
 
