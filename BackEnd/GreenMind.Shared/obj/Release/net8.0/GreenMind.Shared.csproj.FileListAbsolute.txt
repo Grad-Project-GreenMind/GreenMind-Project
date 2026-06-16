@@ -1,0 +1,12 @@
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\bin\Release\net8.0\GreenMind.Shared.deps.json
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\bin\Release\net8.0\GreenMind.Shared.dll
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\bin\Release\net8.0\GreenMind.Shared.pdb
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\obj\Release\net8.0\GreenMind.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\obj\Release\net8.0\GreenMind.Shared.AssemblyInfoInputs.cache
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\obj\Release\net8.0\GreenMind.Shared.AssemblyInfo.cs
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\obj\Release\net8.0\GreenMind.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\obj\Release\net8.0\GreenMind.Shared.sourcelink.json
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\obj\Release\net8.0\GreenMind.Shared.dll
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\obj\Release\net8.0\refint\GreenMind.Shared.dll
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\obj\Release\net8.0\GreenMind.Shared.pdb
+C:\Users\Salma\source\repos\GreenMind\GreenMind.Shared\obj\Release\net8.0\ref\GreenMind.Shared.dll

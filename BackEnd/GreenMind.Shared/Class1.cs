@@ -1,0 +1,7 @@
+﻿namespace GreenMind.Shared
+{
+    public class Class1
+    {
+
+    }
+}

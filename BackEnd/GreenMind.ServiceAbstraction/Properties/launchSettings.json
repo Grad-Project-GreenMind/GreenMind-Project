@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "GreenMind.ServiceAbstraction": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:11564;http://localhost:11565"
+    }
+  }
+}
