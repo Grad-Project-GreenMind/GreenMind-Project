@@ -1,0 +1,46 @@
+{
+  "base_dataset": {
+    "accuracy": 0.9843,
+    "f1_macro": 0.9843
+  },
+  "new_seed_test": {
+    "accuracy": 0.9585,
+    "f1_macro": 0.9585
+  },
+  "noisy_test": {
+    "accuracy": 0.7716,
+    "f1_macro": 0.772
+  },
+  "ablation_tests": [
+    {
+      "accuracy": 0.9843,
+      "f1_macro": 0.9843,
+      "variant": "full_features"
+    },
+    {
+      "accuracy": 0.9732,
+      "f1_macro": 0.9732,
+      "variant": "drop_region"
+    },
+    {
+      "accuracy": 0.9705,
+      "f1_macro": 0.9702,
+      "variant": "drop_soil_type"
+    },
+    {
+      "accuracy": 0.9043,
+      "f1_macro": 0.9004,
+      "variant": "drop_season"
+    },
+    {
+      "accuracy": 0.8684,
+      "f1_macro": 0.8652,
+      "variant": "drop_region_soil_season"
+    },
+    {
+      "accuracy": 0.8684,
+      "f1_macro": 0.8652,
+      "variant": "numeric_only_base"
+    }
+  ]
+}
