@@ -1,0 +1,7 @@
+# Secret Files
+.env
+# Folders to ignore
+venv/
+__pycache__/
+vectorstore/
+data/
