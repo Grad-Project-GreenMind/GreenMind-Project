@@ -1,0 +1,7 @@
+accuracy,f1_macro,variant
+0.9843,0.9843,full_features
+0.9732,0.9732,drop_region
+0.9705,0.9702,drop_soil_type
+0.9043,0.9004,drop_season
+0.8684,0.8652,drop_region_soil_season
+0.8684,0.8652,numeric_only_base
