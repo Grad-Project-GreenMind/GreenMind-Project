@@ -13,33 +13,33 @@ import BottomBar from "./components/BottomBar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import Home from "./pages/Home";
+import Home from "./pages/Home.jsx";
 
-import SelectionEntry from "./pages/SelectionEntry";
-import ArticlePage from "./pages/ArticlePage";
-import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
-import HomeDashboard from "./pages/HomeDashboard";
-import ProductDashboard from "./pages/ProductDashboard";
-import UserActivity from "./pages/UserActivity";
-import Orders from "./pages/Orders";
-import Profile from "./pages/Profile";
-import ForgotPassword from "./pages/ForgotPassword";
+import SelectionEntry from "./pages/SelectionEntry.jsx";
+import ArticlePage from "./pages/ArticlePage.jsx";
+import SignUp from "./pages/SignUp.jsx";
+import Login from "./pages/Login.jsx";
+import HomeDashboard from "./pages/HomeDashboard.jsx";
+import ProductDashboard from "./pages/ProductDashboard.jsx";
+import UserActivity from "./pages/UserActivity.jsx";
+import Orders from "./pages/Orders.jsx";
+import Profile from "./pages/Profile.jsx";
+import ForgotPassword from "./pages/ForgotPassword.jsx";
 
 //Rehab
 import { CartProvider } from "./context/CartContext";
-import ProductsPage from "./pages/ProductsPage";
-import CartPage from "./pages/CartPage";
-import CheckoutPage from "./pages/CheckoutPage";
-import CropRecommendation from "./pages/CropRecommendation";
-import FertilizerRecommendation from "./pages/FertilizerRecommendation";
+import ProductsPage from "./pages/ProductsPage.jsx";
+import CartPage from "./pages/CartPage.jsx";
+import CheckoutPage from "./pages/CheckoutPage.jsx";
+import CropRecommendation from "./pages/CropRecommendation.jsx";
+import FertilizerRecommendation from "./pages/FertilizerRecommendation.jsx";
 
 //Mohamed
-import History from "./pages/History";
-import HistoryDetails from "./pages/HistoryDetails";
+import History from "./pages/History.jsx";
+import HistoryDetails from "./pages/HistoryDetails.jsx";
 import Chatbot from "./pages/Chatbot.jsx";
-import Reviews from "./pages/Reviews";
-import DetectPlantDiseases from "./pages/DetectPlantDiseases";
+import Reviews from "./pages/Reviews.jsx";
+import DetectPlantDiseases from "./pages/DetectPlantDiseases.jsx";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -85,7 +85,6 @@ function AppContent() {
   const hideBottomBar = noBottomBarPages.includes(path);
   const hideFooter = noFooterPages.includes(path);
 
-  // لاخفاء الزرار العائم لو احنا جوه صفحة الشات بوت فعلا
   const hideChatbotButton = path === "/chatbot";
 
   return (
@@ -95,7 +94,6 @@ function AppContent() {
 
       {!hideHeaderFooter && <Navbar />}
 
-      {/* التعديل هنا: ضفنا pt-20 عشان نمنع الكلام يلزق في الناف بار */}
       <main className={`flex-grow ${!hideHeaderFooter ? "pt-16" : ""}`}>
         <Routes>
           <Route path="/" element={<Home />} />
