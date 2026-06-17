@@ -13,33 +13,33 @@ import BottomBar from "./components/BottomBar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import Home from "./pages/Home.jsx";
+import Home from "./Pages/Home.jsx";
 
-import SelectionEntry from "./pages/SelectionEntry.jsx";
-import ArticlePage from "./pages/ArticlePage.jsx";
-import SignUp from "./pages/SignUp.jsx";
-import Login from "./pages/Login.jsx";
-import HomeDashboard from "./pages/HomeDashboard.jsx";
-import ProductDashboard from "./pages/ProductDashboard.jsx";
-import UserActivity from "./pages/UserActivity.jsx";
-import Orders from "./pages/Orders.jsx";
-import Profile from "./pages/Profile.jsx";
-import ForgotPassword from "./pages/ForgotPassword.jsx";
+import SelectionEntry from "./Pages/SelectionEntry.jsx";
+import ArticlePage from "./Pages/ArticlePage.jsx";
+import SignUp from "./Pages/SignUp.jsx";
+import Login from "./Pages/Login.jsx";
+import HomeDashboard from "./Pages/HomeDashboard.jsx";
+import ProductDashboard from "./Pages/ProductDashboard.jsx";
+import UserActivity from "./Pages/UserActivity.jsx";
+import Orders from "./Pages/Orders.jsx";
+import Profile from "./Pages/Profile.jsx";
+import ForgotPassword from "./Pages/ForgotPassword.jsx";
 
 //Rehab
 import { CartProvider } from "./context/CartContext";
-import ProductsPage from "./pages/ProductsPage.jsx";
-import CartPage from "./pages/CartPage.jsx";
-import CheckoutPage from "./pages/CheckoutPage.jsx";
-import CropRecommendation from "./pages/CropRecommendation.jsx";
-import FertilizerRecommendation from "./pages/FertilizerRecommendation.jsx";
+import ProductsPage from "./Pages/ProductsPage.jsx";
+import CartPage from "./Pages/CartPage.jsx";
+import CheckoutPage from "./Pages/CheckoutPage.jsx";
+import CropRecommendation from "./Pages/CropRecommendation.jsx";
+import FertilizerRecommendation from "./Pages/FertilizerRecommendation.jsx";
 
 //Mohamed
-import History from "./pages/History.jsx";
-import HistoryDetails from "./pages/HistoryDetails.jsx";
-import Chatbot from "./pages/Chatbot.jsx";
-import Reviews from "./pages/Reviews.jsx";
-import DetectPlantDiseases from "./pages/DetectPlantDiseases.jsx";
+import History from "./Pages/History.jsx";
+import HistoryDetails from "./Pages/HistoryDetails.jsx";
+import Chatbot from "./Pages/Chatbot.jsx";
+import Reviews from "./Pages/Reviews.jsx";
+import DetectPlantDiseases from "./Pages/DetectPlantDiseases.jsx";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
